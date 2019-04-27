@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pagamentos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div class="style">
+    <ion-item>
+
+        <ion-label>Entrada:</ion-label>
+        <ion-input displayFormat="HH:mm" type="time" expand="block" [(ngModel)]="datainicial"></ion-input>
+
+    </ion-item>
+    <ion-item>
+
+        <ion-label>Saida:</ion-label>     
+        <ion-input displayFormat="HH:mm" type="time" [(ngModel)]="datafinal"></ion-input>
+
+    </ion-item><br><br>
+    <ion-label>R$:{{TotalPagar}} Reais</ion-label><br>
+    <ion-button color="success" (click)="ValorPago()">Pagamento</ion-button><br>
+    <ion-button class="Sair" color="secondary" (click)="Voltar()">Voltar</ion-button>
+
+
+  </div>
+    
+</ion-content>

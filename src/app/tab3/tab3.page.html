@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Pagamentos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <tr *ngFor="let item of pagamentos ">  
+      <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle *ngIf="item.datafinal=='00:00'">Ticket Não Pago:{{item.id}} </ion-card-subtitle>
+            <ion-card-subtitle *ngIf="item.datafinal!='00:00'">Ticket Pago:{{item.id}} </ion-card-subtitle>
+            </ion-card-header>    
+            <ion-card-content>
+                <td>Hora da Entrada: {{item.datainicial}}</td>
+                <td>Hora da Saida:   {{item.datafinal}}</td>
+                <td>Valor Pago:      {{item.valor}}</td>
+            </ion-card-content>
+          </ion-card>
+    </tr>
+
+</ion-content>

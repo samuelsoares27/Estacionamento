@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Estacionamento
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="style">
+    
+        <h4>Pagamento do Estacionamento</h4><br>  
+        <ion-item> 
+          <ion-label position="floating" required>Consultar Ticket</ion-label>
+          <ion-input type="tel" [(ngModel)]="ticket"></ion-input>
+        </ion-item><br>
+
+        <ion-button expand="block" (click)="ValidarTicket()">Realizar Pagamento</ion-button>  
+      </div>
+
+</ion-content>

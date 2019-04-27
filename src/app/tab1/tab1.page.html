@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Estacionamento
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="style">
+    
+    <h4>Ticket Estacionamento</h4><br>  
+    <ion-item> 
+      <ion-label class="fonte" position="floating">Ticket</ion-label>
+      <ion-input type="tel" disabled="true" [(ngModel)]="codigo"></ion-input>
+    </ion-item><br>
+    <ion-button expand="block" (click)="GeraCodigo()">Gerar Ticket</ion-button>
+    
+  </div>
+
+</ion-content>
